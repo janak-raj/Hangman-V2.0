@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hangman</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css" />
+  </head>
+  <body t="0x31">
+    <div id="home">
+      <div class="title"><b>Hang-Man</b></div>
+      <div class="button anim" onclick="startGame()">Play</div>
+      <div class="foother">Designed & Coded by JRG [Janak Raj Gaha]</div>
+    </div>
+    <div id="result" class="h">
+      <div class="title" id="rT">TITLE</div>
+      <div class="body" id="rM">Message</div>
+      <div class="button anim" onclick="startGame()">Try Again?</div>
+    </div>
+    <div id="pGame">
+      <div id="letter"></div>
+      <div id="game">
+        <div class="player">
+          <div class="playerModel">
+            <div class="head" data="false" id="g4"></div>
+            <div class="body" data="false" l="false" r="false" id="g5"></div>
+            <div class="foot" data="false" l="false" r="false" id="g6"></div>
+          </div>
+        </div>
+        <div class="stang3" data="false" id="g3"></div>
+        <div class="stang2" data="false" id="g2"></div>
+        <div class="stang" data="false" id="g1"></div>
+        <div class="ground" data="false" id="g0"></div>
+        <div class="hintButton" data="false" id="hintButton" onclick="hint()">
+          ?
+        </div>
+      </div>
+      <div id="tastatur"></div>
+      <div class="hint" id="hint">
+        <div class="title">
+          Hint
+          <div class="exit" onclick="hintExit()">X</div>
+        </div>
+        <div class="body" id="hintText"></div>
+      </div>
+    </div>
+  </body>
+  <script src="assets/js/app.js"></script>
+</html>
